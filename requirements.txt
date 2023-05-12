@@ -3,7 +3,7 @@ pandas
 numpy
 matplotlib
 seaborn
-multiapp
+MultiApp
 plotly
 geopandas
 folium
