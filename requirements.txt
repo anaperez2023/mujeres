@@ -1,0 +1,12 @@
+streamlit
+pandas
+numpy
+matplotlib
+seaborn
+multiapp
+plotly
+geopandas
+folium
+branca
+json
+requests
