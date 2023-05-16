@@ -45,7 +45,7 @@ def app_internacional():
         
     st.subheader("Algunas cifras calculadas con los indicadores de desigualdad:")
     st.subheader("EMPRESA")
-    st.image('img/INTEmpresa 2.png', width=350)
+    st.image('img/INTEmpresa2.png', width=350)
     st.subheader("MOVILIDAD")
     st.image('img/INTmovilidad.png', width=350)
     st.subheader("TRABAJO")
