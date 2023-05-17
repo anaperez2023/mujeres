@@ -105,7 +105,7 @@ def app_ingresos():
 
     with st.container():
     # Gráfico salarios 1
-        salarios_hym = pd.read_csv('C:/Users/User/Desktop/BOOTCAMP-DATA-ANALYTICS-Upgrade_Hub/BOOTCAMP/DATA/WOMEN/data/salarios_hym.csv')
+        salarios_hym = pd.read_csv('data/salarios_hym.csv')
 
         trace_hombres = go.Scatter(
         x=salarios_hym["Año"],
@@ -198,7 +198,7 @@ def app_ingresos():
 
 # Gráfico pensiones
 
-    df_pensiones = pd.read_csv('C:/Users/User/Desktop/BOOTCAMP-DATA-ANALYTICS-Upgrade_Hub/BOOTCAMP/DATA/WOMEN/pensiones.csv')
+    df_pensiones = pd.read_csv('data/pensiones.csv')
 
     fig = go.Figure()
     fig.add_trace(go.Bar(x=df_pensiones['Clase de pensión'], y=df_pensiones['Hombres'], name='Hombres', marker=dict(color='#FF8C00')))
@@ -280,7 +280,7 @@ def app_cuidados():
 
 
 # Gráfico excedencias por cuidado de hijos
-    exced_hijos = pd.read_csv('C:/Users/User/Desktop/BOOTCAMP-DATA-ANALYTICS-Upgrade_Hub/BOOTCAMP/DATA/WOMEN/exced_hijos.csv')
+    exced_hijos = pd.read_csv('data/exced_hijos.csv')
     porcentajes = (exced_hijos.loc[exced_hijos["nan"] != "Ambos sexos", "2021"] / exced_hijos.loc[exced_hijos["nan"] != "Ambos sexos", "2021"].sum()) * 100
 
     fig10 = make_subplots(rows=1, cols=1, specs=[[{"type": "pie"}]])
