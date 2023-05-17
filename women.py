@@ -331,7 +331,7 @@ def app_cuidados():
     
 # Gráfico excedencias por cuidado de familiares
 
-    exced_fam = pd.read_csv('C:/Users/User/Desktop/BOOTCAMP-DATA-ANALYTICS-Upgrade_Hub/BOOTCAMP/DATA/WOMEN/exced_fam.csv')
+    exced_fam = pd.read_csv('data/exced_fam.csv')
 
     # Calcular los porcentajes
     porcentajes = (exced_fam.loc[exced_fam["nan"] != "Ambos sexos", "2021"] / exced_fam.loc[exced_fam["nan"] != "Ambos sexos", "2021"].sum()) * 100
